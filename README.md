@@ -48,9 +48,11 @@ Configure your test settings in the playwright.config.js file. You can specify o
 Execute the test suite using the following command:
     ```bash
    npx playwright test
+
 Execute the test suite in UI mode using the following command:
     ```bash
    npx playwright test --ui
+   
 For detailed reports, you can generate an HTML report with:
     ```bash
    npx playwright show-report
@@ -63,5 +65,6 @@ For any questions, please contact [mateusz.sojkowski@stnext.pl].
 2. Accessibility issues spotted thanks to the analyze tool.
 
 ## Potential improvements
-1. Data fixtures
-2. CI/CD
+1. Page Object Model
+2. Data fixtures
+3. CI/CD
