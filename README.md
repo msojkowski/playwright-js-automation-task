@@ -22,23 +22,23 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/project-name.git
+   git clone https://github.com/msojkowski/playwright-js-automation-task
    
 2. Navigate into the project directory:
  
-bash
-   cd project-name
+   ```bash
+   cd playwright-js-automation-task
    
 3. Install dependencies:
  
-bash
+    ```bash
    npm install
    # or
    yarn install
    
 4. Install Playwright and the necessary browser binaries:
  
-bash
+    ```bash
    npx playwright install
    
 ## Configuration
@@ -46,17 +46,14 @@ Configure your test settings in the playwright.config.js file. You can specify o
 
 ## Running Tests
 Execute the test suite using the following command:
-bash
-    npx playwright test
+    ```bash
+   npx playwright test
+Execute the test suite in UI mode using the following command:
+    ```bash
+   npx playwright test --ui
 For detailed reports, you can generate an HTML report with:
-bash
-    npx playwright show-report
-
-## Continuous Integration
-Integrate Playwright tests into your CI/CD pipeline. Example configurations for popular CI services:
-- **GitHub Actions**: .github/workflows/playwright.yml
-- **Jenkins**: Jenkinsfile
-- **CircleCI**: .circleci/config.yml
+    ```bash
+   npx playwright show-report
 
 ## Contact
 For any questions, please contact [mateusz.sojkowski@stnext.pl].
