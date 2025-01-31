@@ -1,6 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 const { columnHeader } = require('../../../helpers/constants.js')
+const { generateRandomNumber } = require('../../../helpers/utils.js')
 const { DragAndDropPage } = require('../../pageObjects/DragAndDropPage')
 
 function getColumnByHeader(page, columnHeader) {
