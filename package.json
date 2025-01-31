@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "run-tests": "npx playwright test",
+    "run-tests-ui": "npx playwright test --ui",
+    "run-tests-staging": "STAGING=1 npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
     "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.5"
-  },
-  "dependencies": {
-    "@axe-core/playwright": "^4.10.1"
+    "@types/node": "^22.10.5",
+    "axe-playwright": "^2.0.3",
+    "dotenv": "^16.4.7"
   }
 }
